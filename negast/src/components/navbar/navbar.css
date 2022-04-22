@@ -4,10 +4,40 @@ body{
 #a_nav_header{
     width:100%;
     display: flex;
-    background-color: #5f4dee;
     justify-content: space-between;
-    padding-top:2%;
-    padding-bottom: 1%;
-    position: fixed;
+    /* position: fixed; */
     /* border:1px solid red; */
+    position: sticky;
+    z-index: 999;
+    top: -10px;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+}
+#negast_logo_nav_div{
+    margin-left: 0px;
+    /* border:1px solid black; */
+    width:10%;
+}
+#a_logo_nav{
+    width:50%;
+    height:100%;
+    /* border:1px solid black;    */
+}
+#a_options_nav{
+    display: flex;
+    justify-content: space-around;
+    width:50%;
+    font-size: 14px;
+    color:#5f4dee;
+    font-weight: 600;
+    padding-top:1%;
+}
+#a_signup_nav{
+    border:2px solid #5f4dee;
+    border-radius: 4px;
+    background-color: transparent;
+    color:#5f4dee;
+    height:60%;
+    margin-top:1%;
+    font-size: 14px;
+    font-weight: 600;
 }
