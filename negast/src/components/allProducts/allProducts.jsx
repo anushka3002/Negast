@@ -7,15 +7,18 @@ import {BoxGrids} from "./RightContainer/RightGrids"
 export const Products=()=>{
     return (
         <>
-        <Navbar/>
-        <div id="rmaincontainer">
-            <div id="rleftcontainer">
-                <LeftFilter/>
+        <div>
+            <Navbar/>
+            <br/><br/><br/><br/><br/><br/>
+            <div id="rmaincontainer">    
+                <div id="rleftcontainer">
+                    <LeftFilter/>
+                </div>
+                <div id="rrightcontainer">
+                    <BoxGrids/>
+                </div>
             </div>
-            <div id="rrightcontainer">
-                <BoxGrids/>
-            </div>
-        </div>
+        </div>       
         </>
     )
 }

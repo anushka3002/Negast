@@ -36,10 +36,10 @@ export const LeftFilter=()=> {
         </AccordionSummary>
         <AccordionDetails>
           <Typography className="changeFilter">
-            Ascending Order
+            A - Z
           </Typography>
           <Typography className="changeFilter">
-            Descending Order
+            Z - A
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -65,7 +65,13 @@ export const LeftFilter=()=> {
             Washing Machine
           </Typography>
           <Typography className="changeFilter">
-            Refrigerator
+            Refrigerators
+          </Typography>
+          <Typography className="changeFilter">
+            AC
+          </Typography>
+          <Typography className="changeFilter">
+            HeadPhones
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -90,8 +96,24 @@ export const LeftFilter=()=> {
           <Typography className="changeFilter">
             Sony
           </Typography>
-        </AccordionDetails>
-      </Accordion>
-    </div>
-  );
-}
+          <Typography className="changeFilter">
+            Lenovo
+          </Typography>
+          <Typography className="changeFilter">
+            Sony
+          </Typography>
+          <Typography className="changeFilter">
+            Xiomi MI
+          </Typography>
+          <Typography className="changeFilter">
+            Realme
+          </Typography>
+          <Typography className="changeFilter">
+            Asus
+          </Typography>
+          </AccordionDetails>
+          </Accordion>
+          </div>
+          );
+        }
+        

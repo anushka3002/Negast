@@ -1,12 +1,15 @@
 #rmaincontainer{
-    width: 100%;
+    width: 90%;
     display: flex;
+    margin: auto;
+    height:auto;
 }
 #rleftcontainer{
     flex: 1;
-    border:2px solid red;
+    /* border:2px solid red; */
 }
 #rrightcontainer{
-    flex: 6;
-    border:2px solid blue;
+    flex: 7;
+    /* border:2px solid blue; */
 }
+
