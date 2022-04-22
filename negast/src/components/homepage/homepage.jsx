@@ -1,6 +1,7 @@
 import "./homepage.css"
 import logo from "./2d.png"
 import wave from "./wave.png"
+import footerWave from "./footerWave.png"
 
 export const Homepage=()=>{
     return(
@@ -38,6 +39,51 @@ export const Homepage=()=>{
         </div>
 
 
+        <h3 style={{marginTop:"10%",color:"#5f4dee"}}>Industry</h3>
+            <h1>Stats of problems</h1>
+        <div id="a_stats">
+            <div>
+            <img src="https://negast.in/images/giant%2021.png"></img>
+            <h2>Market in few hands</h2>
+            <p>Online E-commerce giants are taking over more than 40% of the market combined.</p>
+            </div>
+            <div>
+            <img src="https://negast.in/images/revenue1.png"></img>
+            <h2>Online Revenue</h2>
+            <p>As per IBIS forecast research the online revenue will increase around 9% per year for the next 5 years. In that sense the online market will touch 60-70% by 2024</p>
+            </div>
+            <div>
+            <img src="https://negast.in/images/market%20down1.png"></img>
+            <h2>Market Down</h2>
+            <p>As per the calculation if you are selling 100 products a month then it would be decreased around 30-40 products a month.</p>
+            </div>
+        </div>
+
+        <div id='a_solution_container'>
+            <h1>Solution with process</h1>
+            <h2>App introduction</h2>
+            <div id="a_solution">
+                <div>
+                    <img src="https://negast.in/images/intro%201.png"></img>
+                </div>
+                <div id="a_solution_text">
+                    <h2>Introduction</h2>
+                    <p>Negast is designed in such a way that it creates eagerness among the consumers & never let them buy outside the city. Because every seller has a potential to deliver the goods to their consumers at the best price with good service.</p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+<div>
+    <div id="a_footer">
+    <img style={{width:"100%"}} src={footerWave}></img>
+        <h2>Contact</h2>
+        <p>negast@gmail.com</p>
+        <p>Negast.in</p>
+    </div>
+</div>
         </>
     )
 }
