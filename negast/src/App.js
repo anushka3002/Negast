@@ -9,8 +9,8 @@ import {AllRoutes} from "./routes/route"
 function App() {
   return (
     <div className="App">
-      {/* <AllRoutes/> */}
-      <SellerPost/>
+      <AllRoutes/>
+      {/* <SellerPost/> */}
     </div>
   );
 }
