@@ -1,7 +1,7 @@
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 
 import thunk from "redux-thunk";
-import { product_reducer } from "./allflats/reducer";
+import { product_reducer } from "./products/reducer";
 
 const rootReducers = combineReducers({
   products: product_reducer,
