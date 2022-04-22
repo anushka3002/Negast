@@ -1,0 +1,10 @@
+.changeFilter{
+    text-align: left;
+    color: gray;
+}
+.changeFilter:hover{
+    cursor: pointer;
+    text-decoration: underline; 
+    transition: 1s;
+    color: rgb(72, 72, 245);
+}

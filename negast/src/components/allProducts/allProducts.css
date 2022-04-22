@@ -1,0 +1,12 @@
+#rmaincontainer{
+    width: 100%;
+    display: flex;
+}
+#rleftcontainer{
+    flex: 1;
+    border:2px solid red;
+}
+#rrightcontainer{
+    flex: 6;
+    border:2px solid blue;
+}
