@@ -2,7 +2,9 @@ import { Navbar } from '../navbar/navbar';
 import './allProducts.css';
 import {LeftFilter} from "./LeftFilters/Filters"
 import {BoxGrids} from "./RightContainer/RightGrids"
-
+import {get_products_data} from "../../redux/products/action"
+import {useEffect} from 'react';
+import {useDispatch,useSelector} from 'react-redux';
 
 export const Products=()=>{
     return (

@@ -1,35 +1,27 @@
 import {MainDiv} from "./Grids.jsx"
-import {ProductRating} from "./ProductRating/ProductRating"
+
+import {get_products_data} from "../../../redux/products/action"
+import {useEffect} from 'react';
+import {useDispatch,useSelector} from 'react-redux';
+import {DisplayGrid} from "./DisplayGrid/DisplayGrid"
+
 
 export const BoxGrids=()=> {
+  const dispatch = useDispatch();
+    const alldata = useSelector((store)=>store.products.products)
+    console.log(alldata)
+    useEffect(()=>{
+        getproduct();
+    },[])
+    
+    const getproduct=()=>{
+        dispatch(get_products_data())
+    }
   return (
     <MainDiv>
-      <div className="ProductDiv">
-        <img src="logo192.png"/>
-        <div className="writtenPart">
-          <p className="rtitle">Title</p>
-          <p className="rbrand">Brand</p>
-          <p id="rdescription">My name is Optimus Prime Calling all AutoBots. This is the message to my creator. I m coming for you</p>
-          <p className="rprice">₹Price</p>
-          <p id="rrrating"><ProductRating/></p>
-          <button className="rpostbtn">Post Buyer</button>
-        </div>
-      </div>
-      <div className="ProductDiv">
-
-      </div>
-      <div className="ProductDiv">
-
-      </div>
-      <div className="ProductDiv">
-
-      </div>
-      <div className="ProductDiv">
-
-      </div>
-      <div className="ProductDiv">
-
-      </div>
+      {alldata.map((ele)=>{
+        return <DisplayGrid key={ele._id} data={ele}/>
+      })}
     </MainDiv>
   );
 }
