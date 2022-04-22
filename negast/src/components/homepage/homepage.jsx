@@ -1,14 +1,11 @@
 import "./homepage.css"
-import logo from "./2d.png"
-import wave from "./wave.png"
-import footerWave from "./footerWave.png"
 
 export const Homepage=()=>{
     return(
         <>
         <div id="a_header">
             <div id="negast_logo_div">
-            <img id="a_logo" src={logo}></img>
+            <img id="a_logo" src="2d.png"></img>
             </div>
             <div id="a_options">
             <p>HOME</p>
@@ -28,7 +25,7 @@ export const Homepage=()=>{
             <span id="a_man_image">
             </span>
         </div>
-        <img src={wave} style={{width:"100%"}}></img>
+        <img src="wave.png" style={{width:"100%"}}></img>
 
         <div id="categories">
             <p>Grocery</p>
@@ -78,7 +75,7 @@ export const Homepage=()=>{
 
 <div>
     <div id="a_footer">
-    <img style={{width:"100%"}} src={footerWave}></img>
+    <img style={{width:"100%"}} src="footerWave.png"></img>
         <h2>Contact</h2>
         <p>negast@gmail.com</p>
         <p>Negast.in</p>

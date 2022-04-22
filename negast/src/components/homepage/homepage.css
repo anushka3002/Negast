@@ -125,7 +125,17 @@ body{
 #a_footer{
     background-color: #5f4dee;
     width:100%;
-    margin-bottom: -2px;
+    margin-bottom: -2%;
+    color:white;
+    text-align: left;
+}
+#a_footer>h2{
+    margin-left: 5%;
+    margin-top: 4%;
+}
+#a_footer>p{
+    margin-left: 5%;
+    padding-bottom: 3%;
 }
 
 

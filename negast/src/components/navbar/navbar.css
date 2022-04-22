@@ -1,0 +1,13 @@
+body{
+    width:100%;
+}
+#a_nav_header{
+    width:100%;
+    display: flex;
+    background-color: #5f4dee;
+    justify-content: space-between;
+    padding-top:2%;
+    padding-bottom: 1%;
+    position: fixed;
+    /* border:1px solid red; */
+}

@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router";
 import {SignIn} from "../components/signin/signin";
 import {Signup} from "../components/signup/signup";
 import {Homepage} from "../components/homepage/homepage"
+import { Navbar } from "../components/navbar/navbar";
 
 
 export const AllRoutes=()=>{
