@@ -1,1 +1,1 @@
-# Negast
+# Negast.com
