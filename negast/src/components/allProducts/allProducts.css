@@ -3,10 +3,10 @@
     display: flex;
 }
 #rleftcontainer{
-    flex: 2;
-    border:1px solid red;
+    flex: 1;
+    border:2px solid red;
 }
-#rleftcontainer{
-    flex: 4;
-    border:1px solid blue;
+#rrightcontainer{
+    flex: 6;
+    border:2px solid blue;
 }
