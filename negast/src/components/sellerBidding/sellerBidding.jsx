@@ -27,7 +27,7 @@ export const AddBidding=()=>{
         <input placeholder="Enter your bid"></input>
          <button className="pbtn">Add Bid</button>
       </div>
-      <div className="pbid">
+      <div className="pcomment">
       <input placeholder="Enter comment (optional)"></input>
          <button className="pbtn">Add comment</button>
       </div>

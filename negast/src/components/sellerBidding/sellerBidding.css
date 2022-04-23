@@ -38,3 +38,13 @@
     background-color: #5f4dee;
     color: white;
 }
+.pcomment{
+    margin:auto;
+    align-items:center;
+}
+.pcomment>input{
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+
+}
