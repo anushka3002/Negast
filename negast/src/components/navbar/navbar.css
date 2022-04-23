@@ -30,6 +30,9 @@ body{
     font-weight: 600;
     padding-top:1%;
 }
+#a_options_nav>p{
+    cursor: pointer;
+}
 #a_signup_nav{
     border:2px solid #5f4dee;
     /* border:2px solid #e7e7ee#e7e7ee; */
@@ -37,7 +40,8 @@ body{
     background-color: transparent;
     color:#5f4dee;
     height:60%;
-    margin-top:1%;
+    margin-top:10%;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
 }

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const MainDiv= styled.div`
 display: grid;
 grid-template-columns: repeat(3,1fr);
-grid-template-rows:repeat(6,1fr);
+// grid-template-rows:repeat(6,1fr);
 margin: .5% .5%;
 gap:1.5%;
 // border:2px solid orange; 

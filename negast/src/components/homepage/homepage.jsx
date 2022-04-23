@@ -1,5 +1,6 @@
 import "./homepage.css"
 import { Footer } from "../footer/footer"
+import { Link } from "react-router-dom"
 
 export const Homepage=()=>{
     return(
@@ -14,7 +15,7 @@ export const Homepage=()=>{
             <p>INTRO</p>
             <p>STRENGTH</p>
             <p>PRICING</p>
-            <button id="a_signup">SIGN UP</button>
+            <Link to={"/signup"}><button id="a_signup">SIGN UP</button></Link>
             </div>
         </div>
 
