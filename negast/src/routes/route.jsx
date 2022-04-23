@@ -9,6 +9,8 @@ import { Navbar } from "../components/navbar/navbar";
 import { AddProduct } from "../components/AddProducts/AddProduct";
 import { AddBidding } from "../components/sellerBidding/sellerBidding";
 import { SellerProducts } from "../components/sellerPost/SellerallProducts";
+import { BuyerPost } from "../components/buyerPost/buyerPost";
+
 
 export const AllRoutes = () => {
   return (
@@ -23,6 +25,8 @@ export const AllRoutes = () => {
         <Route exact path="/addproduct" element={<AddProduct />} />
         <Route exact path="/sellerPost" element={<SellerProducts />} />
         <Route exact path="/addBidding" element={<AddBidding />} />
+        <Route exact path="/buyerPost" element={<BuyerPost />} />
+
       </Routes>
     </>
   );
