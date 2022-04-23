@@ -122,10 +122,10 @@ export const LeftFilter=()=> {
           <Typography className="changeFilter" onClick={()=>handleBrand("Realme")}>
             Realme
           </Typography>
-          <Typography className="changeFilter" onClick={()=>handleBrand("MI")}>
+          <Typography className="changeFilter" onClick={()=>handleBrand("Redmi")}>
             Xiomi MI
           </Typography>
-          <Typography className="changeFilter" onClick={()=>handleBrand("Asus")}>
+          <Typography className="changeFilter" onClick={()=>handleBrand("ASUS")}>
             Asus
           </Typography>
           </AccordionDetails>
