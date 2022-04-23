@@ -1,13 +1,13 @@
 import { Navbar } from "../navbar/navbar"
 import "./sellerPost.css"
-import {MainDiv} from "./sellerGrid.jsx"
+import {MainSDiv} from "./sellerGrid.jsx"
 
 
 export const SellerPost=()=>{
     return(
         <>
         <Navbar/>
-        <div id="a_filter_container">
+        <div id="a_seller_filter_container">
             <select>
                 <option>Brand</option>
                 <option value="">LG</option>
@@ -33,37 +33,37 @@ export const SellerPost=()=>{
         </div>
 
 {/* product container */}
-        <div id="a_product_container">
-        <MainDiv>
-      <div className="ProductDiv">
-          <div id="a_image_cont">
+        <div id="a_s_product_container">
+        <MainSDiv>
+      <div className="ProductSDiv">
+          <div id="a_s_image_cont">
         <img src="logo192.png"/>
         </div>
-        <div className="writtenPart">
-          <p className="rtitle">Title</p>
-          <p className="rbrand">Brand</p>
-          <p id="rdescription">My name is Optimus Prime Calling all AutoBots. This is the message to my creator. I m coming for you</p>
-          <p className="rprice">₹Price</p>
+        <div className="a_writtenPart">
+          <p className="atitle">Title</p>
+          <p className="abrand">Brand</p>
+          <p id="adescription">My name is Optimus Prime Calling all AutoBots. This is the message to my creator. I m coming for you</p>
+          <p className="aprice">₹Price</p>
           {/* <p id="rrrating"><ProductRating/></p> */}
-          <button className="rpostbtn">Post Buyer</button>
+          <button className="apostbtn">Post Buyer</button>
         </div>
       </div>
-      <div className="ProductDiv">
+      <div className="ProductSDiv">
 
       </div>
-      <div className="ProductDiv">
+      <div className="ProductSDiv">
 
       </div>
-      <div className="ProductDiv">
+      <div className="ProductSDiv">
 
       </div>
-      <div className="ProductDiv">
+      <div className="ProductSDiv">
 
       </div>
-      <div className="ProductDiv">
+      <div className="ProductSDiv">
 
       </div>
-    </MainDiv>
+    </MainSDiv>
         </div>
         </>
     )

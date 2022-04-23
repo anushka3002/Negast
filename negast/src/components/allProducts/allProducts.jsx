@@ -11,7 +11,7 @@ export const Products=()=>{
         <>
         <div>
             <Navbar/>
-            <br/><br/><br/><br/><br/><br/>
+            {/* <br></br><br></br> */}
             <div id="rmaincontainer">    
                 <div id="rleftcontainer">
                     <LeftFilter/>

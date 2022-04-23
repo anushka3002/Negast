@@ -5,13 +5,16 @@ import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
+// import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+// import { useNavigate } from "react-router-dom";
+import SignIn from '../signin/Sellersignin'
+import { Link } from "react-router-dom";
 
 import './signup.css'
 
@@ -31,6 +34,16 @@ function Copyright(props) {
 const theme = createTheme();
 
 export const Signup=()=> {
+
+
+  // let navigate = useNavigate()
+
+  // const changePage = () => {
+  //   let path = SignIn
+  //   navigate()
+  // }
+
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -57,7 +70,7 @@ export const Signup=()=> {
           {/* </Avatar> */}
           <img className='negastlogoV' src='Negastlogo.png'/>
           <Typography component="h1" variant="h5">
-            Sign up
+           Seller Sign up
           </Typography>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
@@ -120,9 +133,8 @@ export const Signup=()=> {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="#" variant="body2">
-                  Already have an account? Sign in
-                </Link>
+            <Link to="/signin">Already have an account?Seller Sign in</Link>     
+            
               </Grid>
             </Grid>
           </Box>

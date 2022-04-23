@@ -4,18 +4,24 @@ export const MainDiv= styled.div`
 display: grid;
 grid-template-columns: repeat(3,1fr);
 margin: .5% .5%;
-grid-gap: 4%;
+gap:1.5%;
+// border:2px solid orange; 
+
 
 .ProductDiv{
-    /* border:2px solid orange; */
+    border:1px solid #e5e5e7; 
     margin-left: 5%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /* margin-right: 2%; */
+    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:#e7e7ee;
+    border-radius:10px;
+    // border:1px solid black;
 }
 .ProductDiv>img{
-    width: 90%;
-    height: 55%;
+    width: 100%;
+    height: 40%;
     margin: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .ProductDiv>img:hover{
@@ -24,11 +30,11 @@ grid-gap: 4%;
     transition: 1s;
 }
 .writtenPart{
-    width: 100%;
-    height:50%;
-    /* border: 1px solid red; */
+    margin-top:1%;
+    margin:auto;
+    width: 90%;
     text-align:left;
-    line-height:30%;
+    // border:1px solid black;
 }
 .writtenPart>p{
     margin-left: 2%;
@@ -37,37 +43,18 @@ grid-gap: 4%;
    font-weight: bold;
    font-size:25px; 
 }
-.rtitle:hover{
-    cursor: pointer;
-    transition: 1s;
-    transform: scale(1.02);
-}
 .rbrand{
     font-weight: bold;
     font-size:15px;
     color: grey;
 }
-.rbrand:hover{
-    cursor: pointer;
-    transition: 1s;
-    transform: scale(1.02);
-}
-.rbrand:hover{
-    cursor: pointer;
-}
-
 #rdescription{
-    line-height:100%;
+    line-height:15px;
     font-size:12px;
 }
 .rprice{
     font-size:18px;
     font-weight: bold;
-}
-.rprice:hover{
-    cursor: pointer;
-    transition: 1s;
-    transform: scale(1.02);
 }
 .rpostbtn{
     width: 100%;
@@ -76,17 +63,15 @@ grid-gap: 4%;
     margin: auto;
     font-weight: bold;
     border: none;
+    padding:5px;
     background-color:white;
+    border-radius:5px;
 }
 .rpostbtn:hover{
-    background-color: blue;
+    background-color:#5f4dee;
     color: white;
     cursor: pointer;
     transition: .5s;
-}
-#rrrating:hover{
-    cursor: pointer;
-    transition:1s;
 }
 
 `;
