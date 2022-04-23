@@ -47,6 +47,7 @@ export const UserSignIn=()=> {
       password: data.get('password'),  
   }
   dispatch(get_login_user(temp))
+  console.log("hello", buyer)
   };
 
   return (
@@ -109,7 +110,7 @@ export const UserSignIn=()=> {
             <Link to="/usersignup">Dont have an account? Buyer Sign Up</Link>
             <br/>
             <p>If you want to Login as a Seller</p>
-            <Link to="/signup"> Seller Sign In</Link>
+            <Link to="/signin"> Seller Sign In</Link>
               </Grid>
             </Grid>
           </Box>

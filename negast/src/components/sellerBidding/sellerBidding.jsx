@@ -29,7 +29,8 @@ export const AddBidding=()=>{
          <button className="pbtn">Add Bid</button>
       </div>
       <div className="pcomment">
-      <input placeholder="Enter comment (optional)"></input>
+      <textarea rows="6" cols="50" placeholder="Enter comment (optional)"></textarea>
+      <br></br>
          <button className="pbtn">Add comment</button>
       </div>
     </MainPDiv>
