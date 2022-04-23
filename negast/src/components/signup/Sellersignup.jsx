@@ -13,9 +13,8 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 // import { useNavigate } from "react-router-dom";
-import SignIn from '../signin/signin'
+import SignIn from '../signin/Sellersignin'
 import { Link } from "react-router-dom";
-
 
 import './signup.css'
 
@@ -34,7 +33,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export const BuyerSignup=()=> {
+export const Signup=()=> {
 
 
   // let navigate = useNavigate()
@@ -71,7 +70,7 @@ export const BuyerSignup=()=> {
           {/* </Avatar> */}
           <img className='negastlogoV' src='Negastlogo.png'/>
           <Typography component="h1" variant="h5">
-           Buyer Sign up
+           Seller Sign up
           </Typography>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
@@ -135,11 +134,9 @@ export const BuyerSignup=()=> {
             <Grid container justifyContent="flex-end">
               <Grid item>
 
-            <Link to="/buyersignin">Already have an account?Buyer Sign in</Link>
+            <Link to="/signin">Already have an account?Seller Sign in</Link>
 
-                <p>
-                  
-                </p>
+
               </Grid>
             </Grid>
           </Box>

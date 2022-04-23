@@ -61,7 +61,7 @@ export const SignIn=()=> {
           <img className='negastlogoV' src='Negastlogo.png'/>
 
           <Typography component="h1" variant="h5">
-            User Sign in
+            Seller Sign in
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
@@ -106,7 +106,7 @@ export const SignIn=()=> {
                 {/* <Link href="#" variant="body2">
                   {"Don't have an account? Sign Up"}
                 </Link> */}
-            <Link to="/signup">Already have an account? User Sign Up</Link>
+            <Link to="/signup">Already have an account? Seller Sign Up</Link>
 
               </Grid>
             </Grid>

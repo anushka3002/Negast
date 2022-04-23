@@ -32,7 +32,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export const BuyerSignIn=()=> {
+export const UserSignIn=()=> {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -60,7 +60,7 @@ export const BuyerSignIn=()=> {
           <img className='negastlogoV' src='Negastlogo.png'/>
 
           <Typography component="h1" variant="h5">
-            Buyer Sign in
+            User Sign in
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
@@ -105,7 +105,7 @@ export const BuyerSignIn=()=> {
                 {/* <Link href="#" variant="body2">
                   {"Don't have an account? Buyer Sign Up"}
                 </Link> */}
-            <Link to="/buyersignup">Already have an account? Buyer Sign Up</Link>
+            <Link to="/usersignup">Already have an account? User Sign Up</Link>
 
               </Grid>
             </Grid>

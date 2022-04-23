@@ -13,8 +13,9 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 // import { useNavigate } from "react-router-dom";
-import SignIn from '../signin/signin'
+import SignIn from '../signin/UserSignIn'
 import { Link } from "react-router-dom";
+
 
 import './signup.css'
 
@@ -33,7 +34,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export const Signup=()=> {
+export const UserSignup=()=> {
 
 
   // let navigate = useNavigate()
@@ -134,8 +135,7 @@ export const Signup=()=> {
             <Grid container justifyContent="flex-end">
               <Grid item>
 
-            <Link to="/signin">Already have an account?User Sign in</Link>
-
+            <Link to="/usersignin">Already have an account? User Sign in</Link>
 
               </Grid>
             </Grid>
