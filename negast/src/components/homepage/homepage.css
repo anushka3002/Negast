@@ -134,11 +134,11 @@ body{
 }
 #a_footer>h2{
     margin-left: 5%;
-    margin-top: 4%;
+    /* margin-top: 4%; */
 }
 #a_footer>p{
     margin-left: 5%;
-    padding-bottom: 3%;
+    /* padding-bottom: 3%; */
     cursor: pointer;
 }
 

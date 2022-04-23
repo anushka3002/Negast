@@ -65,8 +65,8 @@ gap:1.5%;
     margin-top: 5%;
     font-weight: bold;
     border: none;
-    color:white;
     background-color:#5f4dee;
+    color: white;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
 }
