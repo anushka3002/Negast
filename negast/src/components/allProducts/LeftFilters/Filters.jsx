@@ -13,11 +13,11 @@ export const LeftFilter=()=> {
   const dispatch = useDispatch();
 
   const sortingProductASC=()=>{
-    dispatch(SortingASC_Products)
+    dispatch(SortingASC_Products())
   }
 
   const sortingProductDESC=()=>{
-    dispatch(SortingDESC_Products)
+    dispatch(SortingDESC_Products())
   }
   return (
     <div>
@@ -30,10 +30,10 @@ export const LeftFilter=()=> {
           <Typography>Price</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className="changeFilter" onClick={sortingProductASC}>
+          <Typography className="changeFilter" onClick={()=>sortingProductASC()}>
             Low to High
           </Typography>
-          <Typography className="changeFilter" onClick={sortingProductDESC}>
+          <Typography className="changeFilter" onClick={()=>sortingProductDESC()}>
             High to Low
           </Typography>
         </AccordionDetails>

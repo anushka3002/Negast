@@ -17,16 +17,16 @@ export const get_products_data = () => async (dispatch) => {
 
   export const SortingASC_Products = () => async (dispatch) => {
     try {
-      const { data } = await axios.get(`https://negast.herokuapp.com/products/low-high`);
+      const { data } = await axios.get(`https://negast.herokuapp.com/products/sort/low-high`);
       dispatch(get_products(data));
     } catch (error) {
-      console.log("Flat Error from Redux", error);
+      console.log("Product Error from Redux", error);
     }
   };
 
   export const SortingDESC_Products = () => async (dispatch) => {
     try {
-      const { data } = await axios.get(`https://negast.herokuapp.com/products/high-low`);
+      const { data } = await axios.get(`https://negast.herokuapp.com/products/sort/high-low`);
       dispatch(get_products(data));
     } catch (error) {
       console.log("Flat Error from Redux", error);
