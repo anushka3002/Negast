@@ -51,9 +51,9 @@ export const UserSignup=()=> {
       mobile: data.get('mobile'),
       email: data.get('email'),
       password: data.get('password'),  
+      profile: "buyer"
   }
     dispatch(get_register_user(temp))
-    navigate('/usersignin');
   };
 
   return (

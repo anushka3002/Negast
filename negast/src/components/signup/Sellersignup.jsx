@@ -51,9 +51,10 @@ export const Signup=()=> {
       mobile: data.get('mobile'),
       email: data.get('email'),
       password: data.get('password'),  
+      profile: "seller"
   }
     dispatch(get_register_vendor(temp))
-    navigate('/signin');
+
   };
 
   return (
