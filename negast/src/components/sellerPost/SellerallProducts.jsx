@@ -10,19 +10,18 @@ import { Footer } from '../footer/footer';
 export const SellerProducts=()=>{
     return (
         <>
-        <div>
+        <div id="footer_bottom">
             <Navbar/>
             {/* <br></br><br></br> */}
             <div id="rmaincontainer">    
                 <div id="rleftcontainer">
-                    <SellerLeftFilter/>
+                    <SellerLeftFilter style={{position:"fixed",border:"1px solid red"}}/>
                 </div>
                 <div id="rrightcontainer">
                     <SellerBoxGrids/>
                 </div>
             </div>
         </div>    
-        <Footer/>   
         </>
     )
 }

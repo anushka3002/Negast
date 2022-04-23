@@ -20,7 +20,7 @@ export const SellerLeftFilter=()=> {
     dispatch(SortingDESC_Products())
   }
   return (
-    <div>
+    <div style={{position:"fixed"}}>
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

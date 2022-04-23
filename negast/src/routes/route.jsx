@@ -10,6 +10,7 @@ import { AddProduct } from "../components/AddProducts/AddProduct";
 import { AddBidding } from "../components/sellerBidding/sellerBidding";
 import { SellerProducts } from "../components/sellerPost/SellerallProducts";
 import { Footer } from "../components/footer/footer";
+import { BuyerPost } from "../components/buyerPost/buyerPost";
 
 export const AllRoutes = () => {
   return (

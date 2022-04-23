@@ -23,6 +23,8 @@
     color:white;
     text-align: left;
     margin-top: 4%;
+    z-index: 1;
+    position: relative;
 }
 #footer_info>div{
     /* text-align: center; */

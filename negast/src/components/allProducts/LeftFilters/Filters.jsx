@@ -28,7 +28,7 @@ export const LeftFilter=()=> {
     dispatch(BrandBlock(value))
   }
   return (
-    <div>
+    <div style={{position:"fixed"}}>
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
