@@ -9,8 +9,10 @@ export const get_login_vendor = (form) => async (dispatch) => {
     try {
       const { data } = await axios.post(`https://negast.herokuapp.com/sellers/login`,form);
       dispatch(get_login_seller(data));
+      alert("Login Successfull")
     } catch (error) {
       console.log("Seller Login Error From Redux", error);
+      alert("Login Crendential Wrong")
     }
   };
 
@@ -18,7 +20,9 @@ export const get_login_vendor = (form) => async (dispatch) => {
     try {
       const { data } = await axios.post(`https://negast.herokuapp.com/sellers/register`,form);
       dispatch(get_login_seller(data));
+      alert("Registered Successfull")
     } catch (error) {
       console.log("Seller Register Error From Redux", error);
+      alert("Register Again")
     }
   };

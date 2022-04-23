@@ -39,13 +39,6 @@ export const SignIn=()=> {
   const navigate =useNavigate();
   const dispatch = useDispatch();
   const seller = useSelector((store)=>store.seller.login)
-  useEffect(()=>{
-      getSeller();
-  },[])
-
-  const getSeller=()=>{
-    dispatch(get_login_vendor())
-  }
   
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -54,8 +47,7 @@ export const SignIn=()=> {
       email: data.get('email'),
       password: data.get('password'),  
   }
-  
-    getSeller();
+    dispatch(get_login_vendor(temp))
   };
 
   return (

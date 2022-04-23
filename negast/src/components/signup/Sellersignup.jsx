@@ -41,23 +41,19 @@ export const Signup=()=> {
   const navigate =useNavigate();
   const dispatch = useDispatch();
   const seller = useSelector((store)=>store.seller.login)
-  useEffect(()=>{
-      getSeller();
-  },[])
-
-  const getSeller=()=>{
-    dispatch(get_register_vendor())
-  }
   
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const temp = {
+      firstName: data.get('firstName'),
+      lastName: data.get('lastName'),
+      profile: data.get('profile'),
+      mobile: data.get('mobile'),
       email: data.get('email'),
       password: data.get('password'),  
   }
-  
-    getSeller();
+    dispatch(get_register_vendor(temp))
   };
 
   return (
@@ -99,6 +95,27 @@ export const Signup=()=> {
                   id="lastName"
                   label="Last Name"
                   name="lastName"
+                  autoComplete="family-name"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  autoComplete="given-name"
+                  name="profile"
+                  required
+                  fullWidth
+                  id="profile"
+                  label="Profile Name"
+                  autoFocus
+                />
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  required
+                  fullWidth
+                  id="mobile"
+                  label="Mobile"
+                  name="mobile"
                   autoComplete="family-name"
                 />
               </Grid>

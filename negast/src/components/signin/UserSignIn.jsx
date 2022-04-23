@@ -25,9 +25,6 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      {/* <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '} */}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
@@ -40,14 +37,7 @@ export const UserSignIn=()=> {
 
   const navigate =useNavigate();
   const dispatch = useDispatch();
-  const seller = useSelector((store)=>store.buyer.login)
-  useEffect(()=>{
-      getBuyer();
-  },[])
-
-  const getBuyer=()=>{
-    dispatch(get_login_user())
-  }
+  const buyer = useSelector((store)=>store.buyer.login)
   
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -56,8 +46,7 @@ export const UserSignIn=()=> {
       email: data.get('email'),
       password: data.get('password'),  
   }
-  
-    getBuyer();
+  dispatch(get_login_user(temp))
   };
 
   return (
