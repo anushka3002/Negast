@@ -133,10 +133,8 @@ export const Signup=()=> {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-
-            <Link to="/signin">Already have an account?Seller Sign in</Link>
-
-
+            <Link to="/signin">Already have an account?Seller Sign in</Link>     
+            
               </Grid>
             </Grid>
           </Box>
