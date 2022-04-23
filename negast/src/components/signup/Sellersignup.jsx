@@ -48,12 +48,12 @@ export const Signup=()=> {
     const temp = {
       firstName: data.get('firstName'),
       lastName: data.get('lastName'),
-      profile: data.get('profile'),
       mobile: data.get('mobile'),
       email: data.get('email'),
       password: data.get('password'),  
   }
     dispatch(get_register_vendor(temp))
+    navigate('/signin');
   };
 
   return (
@@ -68,9 +68,6 @@ export const Signup=()=> {
             alignItems: 'center',
           }}
         >
-          {/* <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}> */}
-            {/* <LockOutlinedIcon /> */}
-          {/* </Avatar> */}
           <img className='negastlogoV' src='Negastlogo.png'/>
           <Typography component="h1" variant="h5">
            Seller Sign up
@@ -98,18 +95,7 @@ export const Signup=()=> {
                   autoComplete="family-name"
                 />
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  autoComplete="given-name"
-                  name="profile"
-                  required
-                  fullWidth
-                  id="profile"
-                  label="Profile Name"
-                  autoFocus
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12}>
                 <TextField
                   required
                   fullWidth

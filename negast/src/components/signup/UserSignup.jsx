@@ -48,12 +48,12 @@ export const UserSignup=()=> {
     const temp = {
       firstName: data.get('firstName'),
       lastName: data.get('lastName'),
-      profile: data.get('profile'),
       mobile: data.get('mobile'),
       email: data.get('email'),
       password: data.get('password'),  
   }
     dispatch(get_register_user(temp))
+    navigate('/usersignin');
   };
 
   return (
@@ -95,18 +95,7 @@ export const UserSignup=()=> {
               autoComplete="family-name"
             />
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <TextField
-              autoComplete="given-name"
-              name="profile"
-              required
-              fullWidth
-              id="profile"
-              label="Profile Name"
-              autoFocus
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12}>
             <TextField
               required
               fullWidth
