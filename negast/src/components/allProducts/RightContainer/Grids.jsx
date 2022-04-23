@@ -14,8 +14,7 @@ gap:1.5%;
     // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color:#e7e7ee;
     border-radius:10px;
-    border:1px solid black;
-    height:650px;
+    height:600px;
 }
 .ProductDiv>img{
     width: 100%;
@@ -51,7 +50,7 @@ gap:1.5%;
     color: grey;
 }
 #rdescription{
-    line-height:15px;
+    line-height:20px;
     font-size:12px;
 }
 .rprice{
@@ -60,15 +59,13 @@ gap:1.5%;
 }
 .rpostbtn{
     width: 100%;
-    height: 10%;
+    height: 8%;
     font-size:18px;
     margin: auto;
+    margin-top: 5%;
     font-weight: bold;
     border: none;
-    // padding:5px;
     background-color:#e7e7ee;
-    border-radius:5px;
-    border:1px solid ;
 }
 .rpostbtn:hover{
     background-color:#5f4dee;
@@ -76,5 +73,4 @@ gap:1.5%;
     cursor: pointer;
     transition: .5s;
 }
-
 `;

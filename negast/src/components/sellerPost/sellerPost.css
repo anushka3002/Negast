@@ -1,4 +1,4 @@
-/* #a_filter_container{
+#a_filter_container{
     margin:auto;
     width:90%;
     border-bottom: 1px solid rgb(216, 214, 214);
@@ -32,4 +32,4 @@
 }
 #a_writtenPart{
     border:1px solid black;
-} */
+}
