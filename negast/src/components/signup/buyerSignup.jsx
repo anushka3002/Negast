@@ -16,6 +16,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import SignIn from '../signin/signin'
 import { Link } from "react-router-dom";
 
+
 import './signup.css'
 
 function Copyright(props) {
@@ -33,7 +34,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export const Signup=()=> {
+export const BuyerSignup=()=> {
 
 
   // let navigate = useNavigate()
@@ -70,7 +71,7 @@ export const Signup=()=> {
           {/* </Avatar> */}
           <img className='negastlogoV' src='Negastlogo.png'/>
           <Typography component="h1" variant="h5">
-           User Sign up
+           Buyer Sign up
           </Typography>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
@@ -134,9 +135,11 @@ export const Signup=()=> {
             <Grid container justifyContent="flex-end">
               <Grid item>
 
-            <Link to="/signin">Already have an account?User Sign in</Link>
+            <Link to="/buyersignin">Already have an account?Buyer Sign in</Link>
 
-
+                <p>
+                  
+                </p>
               </Grid>
             </Grid>
           </Box>

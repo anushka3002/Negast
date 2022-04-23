@@ -12,19 +12,18 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { Link } from "react-router-dom";
-
 
 import './signin.css'
+import { Link } from "react-router-dom";
 
 
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      {/* <Link color="inherit" href="https://mui.com/"> */}
-        {/* Your Website */}
-      {/* </Link>{' '} */}
+      {/* <Link color="inherit" href="https://mui.com/">
+        Your Website
+      </Link>{' '} */}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
@@ -33,7 +32,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export const SignIn=()=> {
+export const BuyerSignIn=()=> {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -61,7 +60,7 @@ export const SignIn=()=> {
           <img className='negastlogoV' src='Negastlogo.png'/>
 
           <Typography component="h1" variant="h5">
-            User Sign in
+            Buyer Sign in
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
@@ -104,9 +103,9 @@ export const SignIn=()=> {
               </Grid>
               <Grid item>
                 {/* <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
+                  {"Don't have an account? Buyer Sign Up"}
                 </Link> */}
-            <Link to="/signup">Already have an account? User Sign Up</Link>
+            <Link to="/buyersignup">Already have an account? Buyer Sign Up</Link>
 
               </Grid>
             </Grid>
