@@ -19,7 +19,12 @@ export const SellerBoxGrids = () => {
   return (
     <MainDiv>
       {alldata.map((ele) => {
-        return <SellerDisplayGrid key={ele._id} data={ele.product} />;
+        {
+          console.log(ele);
+        }
+        return (
+          <SellerDisplayGrid key={ele._id} data={ele.product} postData={ele} />
+        );
       })}
     </MainDiv>
   );

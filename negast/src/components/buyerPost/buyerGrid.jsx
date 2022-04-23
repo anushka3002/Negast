@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 export const MainBDiv = styled.div`
   display: grid;
@@ -13,15 +14,15 @@ export const MainBDiv = styled.div`
     margin-bottom: 3%;
     /* margin-right: 2%; */
   }
-  #ppa_image_cont{
+  #ppa_image_cont {
     width: 40%;
   }
-  #ppa_image_cont>img{
+  #ppa_image_cont > img {
     width: 50%;
     height: 100%;
     object-fit: contain;
   }
-  #ppa_image_cont>img:hover{
+  #ppa_image_cont > img:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: 1s;
@@ -84,10 +85,22 @@ export const MainBDiv = styled.div`
     transition: 1s;
     transform: scale(1.02);
   }
+
+  .vSeeBids {
+    background-color: blue;
+    margin-left: 2%;
+    margin-top: 1%;
+    border: 1px solid blue;
+    border-radius: 8%;
+    width: 15%;
+    height: 25%;
+    color: white;
+  }
 `;
 
-export const PostDiv = ({data}) => {
-  let prod=data
+export const PostDiv = ({ data }) => {
+  const Navigate = useNavigate();
+  let prod = data;
   return (
     <MainBDiv>
       <div className="pPProductDiv">
@@ -97,10 +110,14 @@ export const PostDiv = ({data}) => {
         <div className="ppwrittenPart">
           <p className="pprtitle">{prod.title}</p>
           <p className="pprbrand">{prod.brand}</p>
-          <p id="pprdescription">
-            {prod.description}
-          </p>
+          <p id="pprdescription">{prod.description}</p>
           <p className="pprprice">₹{prod.price}</p>
+          <button
+            className="vSeeBids"
+            onClick={() => Navigate(`/post/${prod._id}`)}
+          >
+            See All Bids
+          </button>
         </div>
       </div>
     </MainBDiv>

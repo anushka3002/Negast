@@ -46,10 +46,23 @@ export const post_buyer_specific = (value) => async (dispatch) => {
     );
 
     console.log("user all post", data);
-      dispatch(get_post(data));
+    dispatch(get_post(data));
   } catch (error) {
     console.log("Buyers Error From Redux", error);
     alert("Post again");
+  }
+};
+
+export const get_post_id = (value) => async (dispatch) => {
+  try {
+    const { data } = await axios.get(
+      `https://negast.herokuapp.com/posts/${value}`
+    );
+
+    console.log(data);
+    dispatch(get_post(data));
+  } catch (error) {
+    console.log("Buyers Error From Redux", error);
   }
 };
 

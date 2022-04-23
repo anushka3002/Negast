@@ -1,7 +1,7 @@
 import { SellerProductRating } from "../SellerProductRating/SellerProductRating";
 import { useNavigate } from "react-router-dom";
 
-export const SellerDisplayGrid = ({ data }) => {
+export const SellerDisplayGrid = ({ data, postData }) => {
   const Navigate = useNavigate();
   console.log("vvvv", data);
   return (
@@ -16,7 +16,10 @@ export const SellerDisplayGrid = ({ data }) => {
           <SellerProductRating key={data._id} rate={data.ratings} />
         </p>
       </div>
-      <button className="rpostbtn" onClick={() => Navigate(`/addBidding/${data._id}`)}>
+      <button
+        className="rpostbtn"
+        onClick={() => Navigate(`/addBidding/${postData._id}`)}
+      >
         Add Your Bid
       </button>
     </div>
