@@ -1,7 +1,9 @@
 import { Products } from "../components/allProducts/allProducts";
 import { Routes, Route } from "react-router";
 import { SignIn } from "../components/signin/Sellersignin";
+import { UserSignIn } from "../components/signin/UserSignIn";
 import { Signup } from "../components/signup/Sellersignup";
+import { UserSignup } from "../components/signup/UserSignup";
 import { Homepage } from "../components/homepage/homepage";
 import { Navbar } from "../components/navbar/navbar";
 import { AddProduct } from "../components/AddProducts/AddProduct";
