@@ -10,8 +10,8 @@ export const DisplayGrid=({data})=>{
             <p id="rdescription">{data.description}</p>
             <p className="rprice">₹{data.price}</p>
             <p id="rrrating"><ProductRating key={data._id} rate={data.ratings}/></p>
-            <button className="rpostbtn">Post Buyer</button>
           </div>
+          <button className="rpostbtn">Post Buyer</button>
         </div>
     )
 }

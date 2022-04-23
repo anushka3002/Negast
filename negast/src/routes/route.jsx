@@ -5,13 +5,7 @@ import { Signup } from "../components/signup/Sellersignup";
 import { Homepage } from "../components/homepage/homepage";
 import { Navbar } from "../components/navbar/navbar";
 import { AddProduct } from "../components/AddProducts/AddProduct";
-<<<<<<< HEAD
 import { AddBidding } from "../components/sellerBidding/sellerBidding";
-=======
-import { UserSignup } from "../components/signup/UserSignup";
-import { UserSignIn } from "../components/signin/UserSignIn";
-import {SellerPost} from "../components/sellerPost/sellerPost"
->>>>>>> e0196d10021817085555f61529065a9575944ab4
 
 export const AllRoutes = () => {
   return (
@@ -24,11 +18,7 @@ export const AllRoutes = () => {
         <Route exact path="/signup" element={<Signup />} />
         <Route exact path="/usersignup" element={<UserSignup/>} />
         <Route exact path="/addproduct" element={<AddProduct />} />
-<<<<<<< HEAD
         <Route exact path="/addBidding" element={<AddBidding />} />
-=======
-        <Route exact path="/sellerPost" element={<SellerPost />} />
->>>>>>> e0196d10021817085555f61529065a9575944ab4
       </Routes>
     </>
   );

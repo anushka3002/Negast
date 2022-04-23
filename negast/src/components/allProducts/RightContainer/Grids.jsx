@@ -14,11 +14,12 @@ gap:1.5%;
     // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color:#e7e7ee;
     border-radius:10px;
-    // border:1px solid black;
+    border:1px solid black;
+    height:650px;
 }
 .ProductDiv>img{
     width: 100%;
-    height: 40%;
+    height: 45%;
     margin: auto;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -33,6 +34,7 @@ gap:1.5%;
     margin-top:1%;
     margin:auto;
     width: 90%;
+    height:40%;
     text-align:left;
     // border:1px solid black;
 }
@@ -58,14 +60,15 @@ gap:1.5%;
 }
 .rpostbtn{
     width: 100%;
-    height: 15%;
+    height: 10%;
     font-size:18px;
     margin: auto;
     font-weight: bold;
     border: none;
-    padding:5px;
-    background-color:white;
+    // padding:5px;
+    background-color:#e7e7ee;
     border-radius:5px;
+    border:1px solid ;
 }
 .rpostbtn:hover{
     background-color:#5f4dee;
