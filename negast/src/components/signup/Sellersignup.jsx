@@ -12,9 +12,13 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-// import { useNavigate } from "react-router-dom";
 import SignIn from '../signin/Sellersignin'
 import { Link } from "react-router-dom";
+import {useNavigate} from 'react-router-dom'
+import {useDispatch,useSelector} from 'react-redux';
+import {useEffect} from 'react';
+import {get_register_vendor} from "../../redux/Seller/action"
+
 
 import './signup.css'
 
@@ -34,23 +38,26 @@ function Copyright(props) {
 const theme = createTheme();
 
 export const Signup=()=> {
+  const navigate =useNavigate();
+  const dispatch = useDispatch();
+  const seller = useSelector((store)=>store.seller.login)
+  useEffect(()=>{
+      getSeller();
+  },[])
 
-
-  // let navigate = useNavigate()
-
-  // const changePage = () => {
-  //   let path = SignIn
-  //   navigate()
-  // }
-
-
+  const getSeller=()=>{
+    dispatch(get_register_vendor())
+  }
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
+    const temp = {
       email: data.get('email'),
-      password: data.get('password'),
-    });
+      password: data.get('password'),  
+  }
+  
+    getSeller();
   };
 
   return (
@@ -132,9 +139,10 @@ export const Signup=()=> {
               Sign Up
             </Button>
             <Grid container justifyContent="flex-end">
-              <Grid item>
-            <Link to="/signin">Already have an account?Seller Sign in</Link>     
-            
+              <Grid className="vsignupbutton" item>
+            <Link to="/signin">Already have an account?Seller Sign in</Link>     <br/>
+            <p>If you want to Register as Buyer</p>
+            <Link to="/usersignup"> Buyer Sign Up</Link>
               </Grid>
             </Grid>
           </Box>
