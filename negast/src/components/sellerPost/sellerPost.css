@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 /* #a_filter_container{
+=======
+#a_seller_filter_container{
+>>>>>>> Stashed changes
     margin:auto;
     width:90%;
     border-bottom: 1px solid rgb(216, 214, 214);
@@ -6,12 +10,16 @@
     padding-top: 2%;
     padding-bottom: 2%
 }
+<<<<<<< Updated upstream
 #a_filter_container>select{
+=======
+#a_seller_filter_container>select{
+>>>>>>> Stashed changes
     padding:5px;
     margin-right:1%;
     font-size:0.8em;
 }
-#a_product_container{
+#a_s_product_container{
     width:90%;
     border:1px solid black;
     height:500px;
@@ -23,13 +31,13 @@
     border:1px solid black;
     height:20%;
 }
-.ProductDiv{
+.ProductSDiv{
     display: flex;
     border:1px solid black;
 }
-#a_image_cont{
+#a_s_image_cont{
     border:1px solid black;
 }
-#writtenPart{
+#a_writtenPart{
     border:1px solid black;
 } */

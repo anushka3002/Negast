@@ -13,7 +13,12 @@ export const LeftFilter=()=> {
   const dispatch = useDispatch();
 
   const sortingProductASC=()=>{
+<<<<<<< Updated upstream
     dispatch(SortingASC_Products())
+=======
+    console.log("helllo")
+    dispatch(SortingASC_Products)
+>>>>>>> Stashed changes
   }
 
   const sortingProductDESC=()=>{

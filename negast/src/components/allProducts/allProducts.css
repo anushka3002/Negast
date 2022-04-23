@@ -1,15 +1,25 @@
 #rmaincontainer{
-    width: 90%;
+    width: 100%;
     display: flex;
     margin: auto;
     height:auto;
 }
 #rleftcontainer{
     flex: 1;
+    margin-top: 1%;
     /* border:2px solid red; */
+    height:500px;
+    background-color: rgb(245, 247, 249);
+    position: fixed;
+    overflow-y: scroll;
+    box-shadow: 5px 20px 20px 5px rgb(210, 208, 208) inset;
 }
 #rrightcontainer{
     flex: 7;
+    margin-top: 3%;
     /* border:2px solid blue; */
+    margin-left: 180px;
+    /* margin-left: 15%; */
+    margin-right: 5%;
 }
 

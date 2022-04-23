@@ -17,7 +17,12 @@ export const get_products_data = () => async (dispatch) => {
 
   export const SortingASC_Products = () => async (dispatch) => {
     try {
+<<<<<<< Updated upstream
       const { data } = await axios.get(`https://negast.herokuapp.com/products/sort/low-high`);
+=======
+      const { data } = await axios.get(`https://negast.herokuapp.com/products/low-high`);
+      console.log("sort")
+>>>>>>> Stashed changes
       dispatch(get_products(data));
     } catch (error) {
       console.log("Product Error from Redux", error);

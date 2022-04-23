@@ -5,8 +5,12 @@ import { Signup } from "../components/signup/Sellersignup";
 import { Homepage } from "../components/homepage/homepage";
 import { Navbar } from "../components/navbar/navbar";
 import { AddProduct } from "../components/AddProducts/AddProduct";
+<<<<<<< Updated upstream
 import { UserSignup } from "../components/signup/UserSignup";
 import { UserSignIn } from "../components/signin/UserSignIn";
+=======
+import { SellerPost } from "../components/sellerPost/sellerPost";
+>>>>>>> Stashed changes
 
 export const AllRoutes = () => {
   return (
@@ -19,6 +23,7 @@ export const AllRoutes = () => {
         <Route exact path="/signup" element={<Signup />} />
         <Route exact path="/usersignup" element={<UserSignup/>} />
         <Route exact path="/addproduct" element={<AddProduct />} />
+        <Route exact path="/sellerPost" element={<SellerPost />} />
       </Routes>
     </>
   );
