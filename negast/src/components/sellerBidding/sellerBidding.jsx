@@ -26,12 +26,12 @@ export const AddBidding=()=>{
       </div>
       <div className="pbid">
         <input placeholder="Enter your bid"></input>
-         <button className="pbtn">Add Bid</button>
+         {/* <button className="pbtn">Add Bid</button> */}
       </div>
       <div className="pcomment">
       <textarea rows="6" cols="50" placeholder="Enter comment (optional)"></textarea>
       <br></br>
-         <button className="pbtn">Add comment</button>
+         <button className="pbtn">Add Bid</button>
       </div>
     </MainPDiv>
         </div>
