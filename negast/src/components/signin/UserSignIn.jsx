@@ -47,6 +47,7 @@ export const UserSignIn=()=> {
       password: data.get('password'),  
   }
   dispatch(get_login_user(temp))
+  console.log("hello", buyer)
   };
 
   return (
