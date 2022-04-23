@@ -16,7 +16,7 @@ export const SellerDisplayGrid = ({ data }) => {
           <SellerProductRating key={data._id} rate={data.ratings} />
         </p>
       </div>
-      <button className="rpostbtn" onClick={() => Navigate("/addBidding")}>
+      <button className="rpostbtn" onClick={() => Navigate(`/addBidding/${data._id}`)}>
         Add Your Bid
       </button>
     </div>

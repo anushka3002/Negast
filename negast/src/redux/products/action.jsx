@@ -51,6 +51,15 @@ export const get_products_data = () => async (dispatch) => {
     }
   };
 
+  export const get_prod_id = (value) => async (dispatch) => {
+    try {
+      const {data} = await axios.get(`https://negast.herokuapp.com/products/${value}`);
+      dispatch(get_products(data));
+    } catch (error) {
+      console.log("Buyers Error From Redux", error);
+    }
+  };
+
 //   export const FilterType = (value) => async (dispatch) => {
 //     try {
 //       const { data } = await axios.get(`https://afternoon-eyrie-36220.herokuapp.com/flat/type/?filter=${value}`);
