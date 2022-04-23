@@ -5,8 +5,20 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './filters.css';
+import {useDispatch,useSelector} from 'react-redux';
+import {useEffect,useState} from 'react';
+import {SortingASC_Products,SortingDESC_Products} from "../../../redux/products/action"
 
 export const LeftFilter=()=> {
+  const dispatch = useDispatch();
+
+  const sortingProductASC=()=>{
+    dispatch(SortingASC_Products)
+  }
+
+  const sortingProductDESC=()=>{
+    dispatch(SortingDESC_Products)
+  }
   return (
     <div>
       <Accordion>
@@ -18,10 +30,10 @@ export const LeftFilter=()=> {
           <Typography>Price</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className="changeFilter">
+          <Typography className="changeFilter" onClick={sortingProductASC}>
             Low to High
           </Typography>
-          <Typography className="changeFilter">
+          <Typography className="changeFilter" onClick={sortingProductDESC}>
             High to Low
           </Typography>
         </AccordionDetails>
