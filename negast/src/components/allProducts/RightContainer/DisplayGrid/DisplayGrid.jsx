@@ -1,8 +1,28 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { get_post_buyer } from "../../../../redux/Post/action";
 import { ProductRating } from "../ProductRating/ProductRating";
 
 export const DisplayGrid = ({ data }) => {
+  // data.id, local user id , comment
+
+  const dispatch = useDispatch();
+
   const [text, setText] = useState(false);
+  const handlePost = () => {
+    const userData = JSON.parse(localStorage.getItem("buyerData"));
+    // console.log("userdata", userData);
+
+    const temp = {
+      product: data._id,
+      buyer: userData._id,
+      comment: "I want this ASAP",
+    };
+
+    // console.log("post data", temp);
+
+    dispatch(get_post_buyer(temp));
+  };
   return (
     <div className="ProductDiv">
       <img src={data.image} />
@@ -20,7 +40,8 @@ export const DisplayGrid = ({ data }) => {
         <button
           className="rpostbtn"
           onClick={() => {
-            alert(` The ${data.title} is now posted.`);
+            handlePost();
+            // alert(` The ${data.title} is now posted.`);
             setText("Posted");
           }}
         >
@@ -30,8 +51,8 @@ export const DisplayGrid = ({ data }) => {
         <button
           className="rpostbtn"
           onClick={() => {
-            alert(` The ${data.title} is now posted.`);
-            setText("Posted");
+            // setText("Posted");
+            // alert(` The ${data.title} is now posted.`);
           }}
           style={{ backgroundColor: "grey" }}
         >
