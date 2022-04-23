@@ -10,6 +10,7 @@ import { AddProduct } from "../components/AddProducts/AddProduct";
 import { AddBidding } from "../components/sellerBidding/sellerBidding";
 import { SellerProducts } from "../components/sellerPost/SellerallProducts";
 import { Footer } from "../components/footer/footer";
+import { BuyerPost } from "../components/buyerPost/buyerPost";
 
 export const AllRoutes = () => {
   return (
@@ -20,14 +21,13 @@ export const AllRoutes = () => {
         <Route exact path="/signin" element={<SignIn />} />
         <Route exact path="/usersignin" element={<UserSignIn />} />
         <Route exact path="/signup" element={<Signup />} />
-        <Route exact path="/usersignup" element={<UserSignup/>} />
+        <Route exact path="/usersignup" element={<UserSignup />} />
         <Route exact path="/addproduct" element={<AddProduct />} />
         <Route exact path="/sellerPost" element={<SellerProducts />} />
         <Route exact path="/addBidding" element={<AddBidding />} />
         <Route exact path="/buyerPost" element={<BuyerPost />} />
-
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 };
