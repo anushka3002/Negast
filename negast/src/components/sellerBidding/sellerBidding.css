@@ -35,9 +35,10 @@
 }
 .pbid>input{
     border-radius:1.5px solid black;
+
 }
 .pbtn{
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #5f4dee;
     color: white;
 }

@@ -79,7 +79,7 @@ export const PostDiv = () => {
           <img src="logo192.png" />
         </div>
         <div className="ppwrittenPart">
-          <p className="pprtitle">Title</p>
+          <p className="pprtitle"></p>
           <p className="pprbrand">Brand</p>
           <p id="pprdescription">
             My name is Optimus Prime Calling all AutoBots. This is the message
