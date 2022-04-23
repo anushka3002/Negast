@@ -2,3 +2,13 @@
     width: 12%;
     border-radius: 50%;
 }
+
+.vsignupbutton{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.vsignupbutton>p{
+    font-weight: bold;
+    color: grey;
+}

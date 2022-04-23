@@ -15,6 +15,10 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import './signin.css'
 import { Link } from "react-router-dom";
+import {useNavigate} from 'react-router-dom'
+import {useDispatch,useSelector} from 'react-redux';
+import {useEffect} from 'react';
+import {get_login_user} from "../../redux/Buyer/action"
 
 
 function Copyright(props) {
@@ -33,13 +37,27 @@ function Copyright(props) {
 const theme = createTheme();
 
 export const UserSignIn=()=> {
+
+  const navigate =useNavigate();
+  const dispatch = useDispatch();
+  const seller = useSelector((store)=>store.buyer.login)
+  useEffect(()=>{
+      getBuyer();
+  },[])
+
+  const getBuyer=()=>{
+    dispatch(get_login_user())
+  }
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
+    const temp = {
       email: data.get('email'),
-      password: data.get('password'),
-    });
+      password: data.get('password'),  
+  }
+  
+    getBuyer();
   };
 
   return (
@@ -60,7 +78,7 @@ export const UserSignIn=()=> {
           <img className='negastlogoV' src='Negastlogo.png'/>
 
           <Typography component="h1" variant="h5">
-            User Sign in
+            Buyer Sign in
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
@@ -97,16 +115,12 @@ export const UserSignIn=()=> {
             </Button>
             <Grid container>
               <Grid item xs>
-                {/* <Link href="#" variant="body2">
-                  Forgot password?
-                </Link> */}
               </Grid>
-              <Grid item>
-                {/* <Link href="#" variant="body2">
-                  {"Don't have an account? Buyer Sign Up"}
-                </Link> */}
-            <Link to="/usersignup">Already have an account? User Sign Up</Link>
-
+              <Grid className="vsignupbutton" item>
+            <Link to="/usersignup">Dont have an account? Buyer Sign Up</Link>
+            <br/>
+            <p>If you want to Login as a Seller</p>
+            <Link to="/signup"> Seller Sign In</Link>
               </Grid>
             </Grid>
           </Box>

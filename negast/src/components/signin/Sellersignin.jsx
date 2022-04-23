@@ -13,8 +13,10 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Link } from "react-router-dom";
-
-
+import {useNavigate} from 'react-router-dom'
+import {useDispatch,useSelector} from 'react-redux';
+import {useEffect} from 'react';
+import {get_login_vendor} from "../../redux/Seller/action"
 import './signin.css'
 
 
@@ -34,13 +36,26 @@ function Copyright(props) {
 const theme = createTheme();
 
 export const SignIn=()=> {
+  const navigate =useNavigate();
+  const dispatch = useDispatch();
+  const seller = useSelector((store)=>store.seller.login)
+  useEffect(()=>{
+      getSeller();
+  },[])
+
+  const getSeller=()=>{
+    dispatch(get_login_vendor())
+  }
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
+    const temp = {
       email: data.get('email'),
-      password: data.get('password'),
-    });
+      password: data.get('password'),  
+  }
+  
+    getSeller();
   };
 
   return (
@@ -54,10 +69,7 @@ export const SignIn=()=> {
             flexDirection: 'column',
             alignItems: 'center',
           }}
-        >
-          {/* <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
-          </Avatar> */}
+        > 
           <img className='negastlogoV' src='Negastlogo.png'/>
 
           <Typography component="h1" variant="h5">
@@ -98,15 +110,12 @@ export const SignIn=()=> {
             </Button>
             <Grid container>
               <Grid item xs>
-                {/* <Link href="#" variant="body2">
-                  Forgot password?
-                </Link> */}
               </Grid>
-              <Grid item>
-                {/* <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link> */}
-            <Link to="/signup">Already have an account? Seller Sign Up</Link>
+              <Grid className="vsignupbutton" item>
+            <Link to="/signup">Don't have an account? Seller Sign Up</Link>
+            <br/>
+            <p>If you want to Login as Buyer</p>
+            <Link to="/usersignin" >Buyer Sign in</Link>
 
               </Grid>
             </Grid>

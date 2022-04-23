@@ -71,7 +71,7 @@ export const UserSignup=()=> {
           {/* </Avatar> */}
           <img className='negastlogoV' src='Negastlogo.png'/>
           <Typography component="h1" variant="h5">
-           User Sign up
+           Buyer Sign up
           </Typography>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
@@ -133,10 +133,12 @@ export const UserSignup=()=> {
               Sign Up
             </Button>
             <Grid container justifyContent="flex-end">
-              <Grid item>
+              <Grid  className="vsignupbutton" item>
 
-            <Link to="/usersignin">Already have an account? User Sign in</Link>
-
+            <Link to="/usersignin">Already have an account? Buyer Sign in</Link>
+            <br/>
+            <p>If you want to Register as Seller</p>
+            <Link to="/signup"> Seller Sign Up</Link>
               </Grid>
             </Grid>
           </Box>
