@@ -6,6 +6,7 @@ import {useParams} from 'react-router-dom'
 import {get_prod_id} from "../../redux/products/action"
 import {useEffect} from 'react';
 import {useDispatch,useSelector} from 'react-redux';
+import {PostDiv} from "../buyerPost/buyerGrid"
 
 export const AddBidding=()=>{
   const {id} = useParams();
@@ -23,8 +24,21 @@ export const AddBidding=()=>{
         dispatch(get_prod_id(id))
     }
     return(
-        <>
-        <Navbar/>
+        <div>
+      <Navbar />
+      <div id="pa_product_container">
+        
+        <PostDiv key={data._id}  data={data}/>
+      </div>
+      <div className="pbid">
+        <input placeholder="Enter your bid"></input>
+      </div>
+      <div className="pcomment">
+      <textarea rows="6" cols="50" placeholder="Enter comment (optional)"></textarea>
+      <br></br>
+         <button className="pbtn">Add Bid</button>
+      </div>
+        {/*<Navbar/>
         <div id="a_product_container">
         <MainPDiv>
       <div className="PProductDiv">
@@ -38,16 +52,9 @@ export const AddBidding=()=>{
           <p className="prprice">₹{data.price}</p>
         </div>
       </div>
-      <div className="pbid">
-        <input placeholder="Enter your bid"></input>
-      </div>
-      <div className="pcomment">
-      <textarea rows="6" cols="50" placeholder="Enter comment (optional)"></textarea>
-      <br></br>
-         <button className="pbtn">Add Bid</button>
-      </div>
+      
     </MainPDiv>
+    </div>*/}
         </div>
-        </>
     )
 }

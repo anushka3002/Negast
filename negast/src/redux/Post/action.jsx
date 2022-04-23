@@ -40,15 +40,13 @@ export const get_post_buyer = (form) => async (dispatch) => {
 };
 
 export const post_buyer_specific = (value) => async (dispatch) => {
-  //:userid --> latest post server [...]
-  //ye wala local hai []
   try {
     const { data } = await axios.get(
       `https://negast.herokuapp.com/posts/buyer/${value}`
     );
 
     console.log("user all post", data);
-    //   dispatch(get_post(data));
+      dispatch(get_post(data));
   } catch (error) {
     console.log("Buyers Error From Redux", error);
     alert("Post again");
@@ -56,8 +54,6 @@ export const post_buyer_specific = (value) => async (dispatch) => {
 };
 
 export const get_all_post = () => async (dispatch) => {
-  //:userid --> latest post server [...]
-  //ye wala local hai []
   try {
     const { data } = await axios.get(`https://negast.herokuapp.com/posts/`);
 

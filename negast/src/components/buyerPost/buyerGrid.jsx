@@ -10,12 +10,27 @@ export const MainBDiv = styled.div`
     /* border:2px solid orange; */
     // margin-left: 5%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 3%;
     /* margin-right: 2%; */
   }
+  #ppa_image_cont{
+    width: 40%;
+  }
+  #ppa_image_cont>img{
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+  }
+  #ppa_image_cont>img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+  }
   .pPProductDiv > img {
-    width: 90%;
-    height: 55%;
+    width: 40%;
+    height: 40%;
     margin: auto;
+    object-fit: contain;
   }
 
   .pPProductDiv > img:hover {
@@ -71,21 +86,21 @@ export const MainBDiv = styled.div`
   }
 `;
 
-export const PostDiv = () => {
+export const PostDiv = ({data}) => {
+  let prod=data
   return (
     <MainBDiv>
       <div className="pPProductDiv">
         <div id="ppa_image_cont">
-          <img src="logo192.png" />
+          <img src={prod.image} />
         </div>
         <div className="ppwrittenPart">
-          <p className="pprtitle"></p>
-          <p className="pprbrand">Brand</p>
+          <p className="pprtitle">{prod.title}</p>
+          <p className="pprbrand">{prod.brand}</p>
           <p id="pprdescription">
-            My name is Optimus Prime Calling all AutoBots. This is the message
-            to my creator. I m coming for you
+            {prod.description}
           </p>
-          <p className="pprprice">₹Price</p>
+          <p className="pprprice">₹{prod.price}</p>
         </div>
       </div>
     </MainBDiv>
