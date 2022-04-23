@@ -6,6 +6,7 @@ export const BuyerPost=()=>{
     return(
         <>
         <Navbar/>
+        <br></br><br></br>
         <div id="pa_product_container">
         <MainBDiv>
       <div className="pPProductDiv">

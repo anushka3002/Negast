@@ -11,9 +11,9 @@ export const Homepage=()=>{
             </div>
             <div id="a_options">
             <p>HOME</p>
+            <Link style={{textDecoration:"none",color:"white"}} to={"/allProducts"}><p>PRODUCTS</p></Link>
             <p>PROBLEMS</p>
             <p>INTRO</p>
-            <p>STRENGTH</p>
             <p>PRICING</p>
             <Link to={"/signup"}><button id="a_signup">SIGN UP</button></Link>
             </div>
@@ -72,8 +72,7 @@ export const Homepage=()=>{
                 </div>
             </div>
         </div>
-        
-<Footer/>
+    
         </>
     )
 }
