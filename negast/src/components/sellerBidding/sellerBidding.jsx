@@ -35,7 +35,7 @@ export const AddBidding=()=>{
       </div>
     </MainPDiv>
         </div>
-        <Footer/>
+        {/* <Footer/> */}
         </>
     )
 }
