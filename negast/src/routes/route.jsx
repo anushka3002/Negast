@@ -5,6 +5,7 @@ import { Signup } from "../components/signup/signup";
 import { Homepage } from "../components/homepage/homepage";
 import { Navbar } from "../components/navbar/navbar";
 import { AddProduct } from "../components/AddProducts/AddProduct";
+import { AddBidding } from "../components/sellerBidding/sellerBidding";
 
 export const AllRoutes = () => {
   return (
@@ -15,6 +16,7 @@ export const AllRoutes = () => {
         <Route exact path="/signin" element={<SignIn />} />
         <Route exact path="/signup" element={<Signup />} />
         <Route exact path="/addproduct" element={<AddProduct />} />
+        <Route exact path="/addBidding" element={<AddBidding />} />
       </Routes>
     </>
   );
