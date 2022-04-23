@@ -2,7 +2,10 @@
     width: 100%;
     display: flex;
     margin: auto;
+    /* height:100%; */
     height:auto;
+    /* border:2px solid rgb(255, 55, 0); */
+    /* overflow: hidden; */
 }
 #rleftcontainer{
     flex: 1;
@@ -10,7 +13,7 @@
     /* border:2px solid red; */
     height:550px;
     background-color: rgb(245, 247, 249);
-    position: fixed;
+    /* position: fixed; */
     overflow-y: scroll;
     box-shadow: 5px 20px 20px 5px rgb(210, 208, 208) inset;
 }
@@ -28,3 +31,6 @@
 #rRatingzindex{
     margin-top:-4%
 }
+#footer_bottom{
+    margin-bottom: 290%;
+}   

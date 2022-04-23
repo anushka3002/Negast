@@ -5,6 +5,7 @@ import {SellerBoxGrids} from "./SellerRightContainer/SellerRightGrids"
 import {get_products_data} from "../../redux/products/action"
 import {useEffect} from 'react';
 import {useDispatch,useSelector} from 'react-redux';
+import { Footer } from '../footer/footer';
 
 export const SellerProducts=()=>{
     return (
@@ -20,7 +21,8 @@ export const SellerProducts=()=>{
                     <SellerBoxGrids/>
                 </div>
             </div>
-        </div>       
+        </div>    
+        <Footer/>   
         </>
     )
 }

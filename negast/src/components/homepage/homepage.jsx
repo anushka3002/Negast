@@ -1,5 +1,5 @@
 import "./homepage.css"
-import {FontAwesomeIcon} from "fontawesome"
+import { Footer } from "../footer/footer"
 
 export const Homepage=()=>{
     return(
@@ -71,21 +71,8 @@ export const Homepage=()=>{
                 </div>
             </div>
         </div>
-<h2>helo</h2>
-<div id="a_social_media">
-{/* <FontAwesomeIcon icon="fa-brands fa-facebook-f" /> */}
-<h4>hello</h4>
-</div>
-
-
-<div>
-    <div id="a_footer">
-    <img style={{width:"100%"}} src="footerWave.png"></img>
-        <h2>Contact askdnfas</h2>
-        <p>negast@gmail.com</p>
-        <p>Negast.in</p>
-    </div>
-</div>
+        
+<Footer/>
         </>
     )
 }

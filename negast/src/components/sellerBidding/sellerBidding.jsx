@@ -1,6 +1,7 @@
 import { Navbar } from "../navbar/navbar"
 import "./sellerBidding.css"
 import {MainPDiv} from "./biddingGrid.jsx"
+import { Footer } from "../footer/footer"
 
 export const AddBidding=()=>{
     return(
@@ -33,6 +34,7 @@ export const AddBidding=()=>{
       </div>
     </MainPDiv>
         </div>
+        {/* <Footer/> */}
         </>
     )
 }

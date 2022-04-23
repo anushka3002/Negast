@@ -1,0 +1,50 @@
+#a_social_media{
+    margin:auto;
+    margin-top: 4%;
+    justify-content: space-around;
+    width:50%;
+}
+#social_icon{
+    margin:1%;
+    size: 100;
+    background-color: #5f4dee;
+    border-radius: 50%;
+    color:white;
+    padding:2%
+}
+#social_icon:hover{
+    background-color:#f1effe;
+    color:#5f4dee;
+}
+#a_footer{
+    background-color: #5f4dee;
+    width:100%;
+    margin-bottom: -2%;
+    color:white;
+    text-align: left;
+    margin-top: 4%;
+}
+#footer_info>div{
+    /* text-align: center; */
+    /* border:1px solid black */
+}
+#footer_info>div>h2{
+    text-decoration: underline;
+    /* border:1px solid black; */
+}
+#footer_info>div>p{
+    cursor: pointer;
+}
+#negastin{
+    padding-bottom: 5%;
+}
+#footer_info{
+    width:90%;
+    display: flex;
+    justify-content: space-around;
+    margin:auto;
+    line-height: 15px;
+    padding-bottom: 2%;
+}
+
+
