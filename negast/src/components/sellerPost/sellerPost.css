@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 /* #a_filter_container{
-=======
-#a_seller_filter_container{
->>>>>>> Stashed changes
     margin:auto;
     width:90%;
     border-bottom: 1px solid rgb(216, 214, 214);
@@ -10,11 +6,7 @@
     padding-top: 2%;
     padding-bottom: 2%
 }
-<<<<<<< Updated upstream
 #a_filter_container>select{
-=======
-#a_seller_filter_container>select{
->>>>>>> Stashed changes
     padding:5px;
     margin-right:1%;
     font-size:0.8em;

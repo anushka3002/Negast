@@ -5,12 +5,9 @@ import { Signup } from "../components/signup/Sellersignup";
 import { Homepage } from "../components/homepage/homepage";
 import { Navbar } from "../components/navbar/navbar";
 import { AddProduct } from "../components/AddProducts/AddProduct";
-<<<<<<< Updated upstream
 import { UserSignup } from "../components/signup/UserSignup";
 import { UserSignIn } from "../components/signin/UserSignIn";
-=======
-import { SellerPost } from "../components/sellerPost/sellerPost";
->>>>>>> Stashed changes
+import {SellerPost} from "../components/sellerPost/sellerPost"
 
 export const AllRoutes = () => {
   return (

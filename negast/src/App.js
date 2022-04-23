@@ -10,10 +10,7 @@ function App() {
   return (
     <div className="App">
       <AllRoutes/>
-<<<<<<< Updated upstream
   {/*<SellerPost/>*/}
-=======
->>>>>>> Stashed changes
     </div>
   );
 }
