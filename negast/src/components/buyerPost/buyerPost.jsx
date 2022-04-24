@@ -1,29 +1,32 @@
-import { Navbar } from "../navbar/navbar"
-import "./buyerPost.css"
-import {MainBDiv} from "./buyerGrid.jsx"
+import { Navbar } from "../navbar/navbar";
+import "./buyerPost.css";
+import { MainBDiv, PostDiv } from "./buyerGrid.jsx";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { post_buyer_specific } from "../../redux/Post/action";
 
-export const BuyerPost=()=>{
-    return(
-        <>
-        <Navbar/>
-        <br></br><br></br><br></br><br></br>
-        <div id="pa_product_container">
-        <MainBDiv>
-      <div className="pPProductDiv">
-          <div id="ppa_image_cont">
-        <img src="logo192.png"/>
-        </div>
-        <div className="ppwrittenPart">
-          <p className="pprtitle">Title</p>
-          <p className="pprbrand">Brand</p>
-          <p id="pprdescription">My name is Optimus Prime Calling all AutoBots. This is the message to my creator. I m coming for you</p>
-          <p className="pprprice">₹Price</p>
-          
-        </div>
+export const BuyerPost = () => {
+  const dispatch = useDispatch();
+
+  const alldata = useSelector((store) => store.post.post);
+  const data = JSON.parse(localStorage.getItem("buyerData"))
+
+  useEffect(() => {
+    getproduct();
+  }, []);
+
+  const getproduct = () => {
+    dispatch(post_buyer_specific(data._id));
+  };
+
+  return (
+    <>
+      <Navbar />
+      <div id="pa_product_container">
+        {alldata.map((e)=>{
+          return <PostDiv key={e._id}  data={e.product}/>
+        })}
       </div>
-      
-    </MainBDiv>
-        </div>
-        </>
-    )
-}
+    </>
+  );
+};

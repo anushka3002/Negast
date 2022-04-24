@@ -13,8 +13,7 @@ grid-gap: 4%;
     /* margin-right: 2%; */
 }
 .PProductDiv>img{
-    width: 90%;
-    height: 55%;
+    width: 40%;
     margin: auto;
 }
 
