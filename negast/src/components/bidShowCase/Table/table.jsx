@@ -36,7 +36,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 export const CustomizedTables=({id})=>{
     const dispatch = useDispatch();
   const rows = useSelector((store) => store.bids.bids);
-  console.log("bababy rishabh",rows) 
+  console.log("Hello ROws",rows) 
 
   useEffect(() => {
     getproduct();
@@ -45,7 +45,7 @@ export const CustomizedTables=({id})=>{
   const getproduct = () => {
     dispatch(get_bids_data(id));
   };
-    console.log("rishabh",id)
+    console.log("Hello Bid",id)
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
