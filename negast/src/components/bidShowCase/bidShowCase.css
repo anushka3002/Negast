@@ -1,0 +1,31 @@
+#an_filter_container{
+    margin:auto;
+    width:90%;
+    /* border-bottom: 1px solid rgb(216, 214, 214); */
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 2%
+}
+#an_filter_container>select{
+    /* width:12%; */
+    padding:5px;
+    margin-right:1%;
+    font-size:0.8em;
+}
+#an_product_container{
+    width:90%;
+    /* border:1px solid black; */
+    height:500px;
+    margin:auto;
+}
+#an_product_grid{
+    display: grid;
+    grid-template-columns:repeat(3fr, 4fr);
+    /* border:1px solid black; */
+    height:20%;
+}
+.anProductDiv{
+    display: flex;
+    /* border:1px solid black; */
+}
+

@@ -4,9 +4,14 @@ import {MainPDiv} from "./biddingGrid.jsx"
 import { Footer } from "../footer/footer"
 
 export const AddBidding=()=>{
+
+  
+
     return(
         <>
-        <Navbar/>
+        {/* <Navbar/> */}
+        <br></br><br></br>
+        <br></br>
       
 {/* product container */}
         <div id="a_product_container">
@@ -26,12 +31,12 @@ export const AddBidding=()=>{
       </div>
       <div className="pbid">
         <input placeholder="Enter your bid"></input>
-         {/* <button className="pbtn">Add Bid</button> */}
+         <button className="pbtn">Add Bid</button>
       </div>
       <div className="pcomment">
       <textarea rows="6" cols="50" placeholder="Enter comment (optional)"></textarea>
       <br></br>
-         <button className="pbtn">Add Bid</button>
+         <button className="pbtn">Add comment</button>
       </div>
     </MainPDiv>
         </div>

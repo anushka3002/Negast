@@ -11,6 +11,7 @@ import { AddBidding } from "../components/sellerBidding/sellerBidding";
 import { SellerProducts } from "../components/sellerPost/SellerallProducts";
 import { Footer } from "../components/footer/footer";
 import { BuyerPost } from "../components/buyerPost/buyerPost";
+import { BidShowCase } from "../components/bidShowCase/bidShowCase";
 
 export const AllRoutes = () => {
   return (
@@ -26,6 +27,7 @@ export const AllRoutes = () => {
         <Route exact path="/sellerPost" element={<SellerProducts />} />
         <Route exact path="/addBidding" element={<AddBidding />} />
         <Route exact path="/buyerPost" element={<BuyerPost />} />
+        <Route exact path="/bidShowCase" element={<BidShowCase/>} />
 
       </Routes>
       <Footer/>
