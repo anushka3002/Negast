@@ -10,6 +10,7 @@ export const BuyerPost = () => {
 
   const alldata = useSelector((store) => store.post.post);
   const data = JSON.parse(localStorage.getItem("buyerData"))
+  console.log("Hello baby",alldata)
 
   useEffect(() => {
     getproduct();
@@ -24,7 +25,7 @@ export const BuyerPost = () => {
       <Navbar />
       <div id="pa_product_container">
         {alldata.map((e)=>{
-          return <PostDiv key={e._id}  data={e.product}/>
+          return <PostDiv key={e._id}  data={e.product} post={e}/>
         })}
       </div>
     </>

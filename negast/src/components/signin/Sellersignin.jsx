@@ -92,7 +92,7 @@ export const SignIn=()=> {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
-            <Link to={"/sellerPost"}><Button 
+            <Button 
             style={{textDecoration:"none"}}
               type="submit"
               fullWidth
@@ -100,7 +100,7 @@ export const SignIn=()=> {
               sx={{ mt: 3, mb: 2 }}
             >
               Sign In
-            </Button></Link>
+            </Button>
             <Grid container>
               <Grid item xs>
               </Grid>

@@ -27,6 +27,7 @@ export const AllRoutes = () => {
         <Route exact path="/sellerPost" element={<SellerProducts />} />
         <Route exact path="/addBidding/:id" element={<AddBidding />} />
         <Route exact path="/buyerPost" element={<BuyerPost />} />
+        <Route exact path="/post/:id" element={<BidShowCase />} />
       </Routes>
       {/*<Footer />*/}
     </>

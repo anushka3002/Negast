@@ -98,7 +98,7 @@ export const MainBDiv = styled.div`
   }
 `;
 
-export const PostDiv = ({ data }) => {
+export const PostDiv = ({ data,post }) => {
   const Navigate = useNavigate();
   let prod = data;
   return (
@@ -114,7 +114,7 @@ export const PostDiv = ({ data }) => {
           <p className="pprprice">₹{prod.price}</p>
           <button
             className="vSeeBids"
-            onClick={() => Navigate(`/post/${prod._id}`)}
+            onClick={() => Navigate(`/post/${post._id}`)}
           >
             See All Bids
           </button>

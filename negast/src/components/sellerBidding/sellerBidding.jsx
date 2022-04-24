@@ -12,24 +12,33 @@ import { get_post_id } from "../../redux/Post/action";
 
 export const AddBidding = () => {
   const { id } = useParams();
-  const dispatch = useDispatch();
+  const [data,setData] =useState([]);
+  // const dispatch = useDispatch();
   const [bid, setBid] = useState({
     price: "",
     comment: "",
   });
 
-  const data = useSelector((store) => store.post.post);
+  console.log("Anushkla",id)
+  
+  useEffect(()=>{
+    getData();
+  },[])
 
-  // console.log("Rishabh", data);
+  const getData =()=>{
+    axios.get(`https://negast.herokuapp.com/posts/${id}`).then((res)=>{
+      setData([...res.data])
+    })
+  }
 
-  useEffect(() => {
-    getproduct();
-  }, []);
 
-  const getproduct = () => {
-    console.log(id);
-    dispatch(get_post_id(id));
-  };
+  // const data = useSelector((store) => store.post.post);
+  // useEffect(() => {
+  //   getproduct();
+  // }, []);
+  // const getproduct = () => {
+  //   dispatch(get_post_id(id));
+  // };
 
   const handleAddBid = () => {
     // console.log(data._id);
@@ -90,24 +99,6 @@ export const AddBidding = () => {
           </div>
         </div>
       </div>
-
-      {/*<Navbar/>
-        <div id="a_product_container">
-        <MainPDiv>
-      <div className="PProductDiv">
-          <div id="pa_image_cont">
-        <img src={data.image}/>
-        </div>
-        <div className="pwrittenPart">
-          <p className="prtitle">{data.title}</p>
-          <p className="prbrand">{data.Brand}</p>
-          <p id="prdescription">{data.description}</p>
-          <p className="prprice">₹{data.price}</p>
-        </div>
-      </div>
-      
-    </MainPDiv>
-    </div>*/}
     </div>
   );
 };

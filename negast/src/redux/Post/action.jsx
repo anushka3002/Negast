@@ -58,8 +58,6 @@ export const get_post_id = (value) => async (dispatch) => {
     const { data } = await axios.get(
       `https://negast.herokuapp.com/posts/${value}`
     );
-
-    console.log(data);
     dispatch(get_post(data));
   } catch (error) {
     console.log("Buyers Error From Redux", error);

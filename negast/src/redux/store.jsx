@@ -5,12 +5,14 @@ import { product_reducer } from "./products/reducer";
 import { seller_reducer } from "./Seller/reducer";
 import { buyer_reducer } from "./Buyer/reducer";
 import { post_reducer } from "./Post/reducer";
+import {bids_reducer} from "./Bids/reducer"
 
 const rootReducers = combineReducers({
   products: product_reducer,
   seller: seller_reducer,
   buyer: buyer_reducer,
   post: post_reducer,
+  bids: bids_reducer,
 });
 
 const loggerMiddlewares1 = (store) => (next) => (action) => {
